@@ -1,0 +1,128 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Initialize all variables",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 159421285,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "that Every thing is initialized",
+            "match": {
+              "location": "Stepdefs.Everythingisinit()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 251764017843,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksDefined.doLogin()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Verify my profile page",
+        "description": "",
+        "id": "login-into-bankbazaar-site;verify-my-profile-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1075712932,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksDefined.exitTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 710400679,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "that I have already login",
+            "match": {
+              "location": "Stepdefs.Already_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13079097189,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on my profile",
+            "match": {
+              "location": "Stepdefs.I_click_on_my_profile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 918576504,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 20,
+                "value": "##Then I find my full name \"SANJAY BADONI\""
+              }
+            ],
+            "line": 21,
+            "name": "I update all About you info",
+            "match": {
+              "location": "Stepdefs.update_all_About_you_info(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "SANJAY",
+                  "PRASAD",
+                  "BADONI",
+                  "23-03-1990",
+                  "MALE",
+                  "MARRIED",
+                  "Masters Degree",
+                  "Indian"
+                ],
+                "line": 22
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Login into bankbazaar site",
+    "description": "",
+    "id": "login-into-bankbazaar-site",
+    "keyword": "Feature",
+    "uri": "com/myapp/ducumber/runner/Login.feature"
+  }
+]
